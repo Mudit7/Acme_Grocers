@@ -23,7 +23,8 @@
 		<form name="login" >
 			<img alt="ACME" src="acme.png"/><br/>
 			<b style="font-size:20px; color:blue; ">Sign in</b><br/>
-			<p>Continue to Billing Portal</p><br><br><br><br>
+			<p>Continue to Billing Portal</p><br>
+			<input type="hidden" id="wrongPass" value="Wrong Password"/><br><br><br>
 			<input type="text" id="user" size="8" maxlength="6" value="Username" onclick="this.value=''"/><br><br>
 			<input type="text" id="pass" size="8" maxlength="8" value="Password" onclick="convToPass()" onfocus="convToPass()" />
 			<br><br><br><br>

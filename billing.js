@@ -49,7 +49,7 @@ function calcTotal(x)
 				var units=document.getElementsByName("units");
 				var total=document.getElementsByName("total");
 				// for unwanted events
-				if((pid[x]='')||(units[x]='')||(x<p-2))
+				if((pid[x]=='')||(units[x]=='')||(x<p-2))
 				return;
 				pid[x].readOnly=true;
 				units[x].readOnly=true;

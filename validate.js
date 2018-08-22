@@ -16,7 +16,7 @@ function validate(username,password){
 	if(check(UserEntries,username,password)==1)
 			location.href="DataEntry.html";
 	else if(check(UserEntries,username,password)==0)
-			alert("Wrong Password, Try Again");		
+			document.getElementById("wrongPass").type="text";	
 	else
 			alert("Wrong Username");
 }

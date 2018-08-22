@@ -1,6 +1,9 @@
 #billTable
 {
+    position: relative;
     border-collapse: collapse;
+    width:60%;
+    margin: auto;
 }
 #item0{
     text-align: center;
@@ -8,7 +11,7 @@
 }
 #grandTotal{
     position: relative;
-    left:60%;
+    left:72%;
 }
 #totalBox{
     border:none;
@@ -32,4 +35,5 @@
     right:43%;
     font-family: fantasy;
     cursor:pointer;
+    font-size: 130%;
 }
