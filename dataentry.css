@@ -1,0 +1,35 @@
+#billTable
+{
+    border-collapse: collapse;
+}
+#item0{
+    text-align: center;
+    background-color: grey;
+}
+#grandTotal{
+    position: relative;
+    left:60%;
+}
+#totalBox{
+    border:none;
+    color: #0000ff;
+    font-size: 110%;
+}
+#footer{
+	position:fixed;
+	background: linear-gradient(to bottom, #373B44 0%, #5286f4 100%);
+	color:#ffffff;
+	bottom: 0%;
+	height: 12%;
+    width: 100%;
+    text-align: center;
+}
+#billGen{
+    position:fixed;
+    height: 5%;
+    width: 12%;
+    bottom: 100;
+    right:43%;
+    font-family: fantasy;
+    cursor:pointer;
+}

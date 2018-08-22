@@ -1,0 +1,90 @@
+<html>
+	<head>
+		<title>Sales Invoice</title>
+		<link type="text/css" rel="stylesheet" href="dataentry.css"/>
+		<script src="productsdata.js"></script>
+		<script src="billing.js"></script>
+		<script>
+			function getInfo(x)
+			{
+				var pid=document.getElementsByName("pid");
+				var description=document.getElementsByName("description");
+				var price=document.getElementsByName("price");
+				var units=document.getElementsByName("units");
+				var total=document.getElementsByName("total");
+				if(pid[x]!='')
+				billItem(pid,description,price,units,total,x);	
+			}
+			function genBill()
+			{
+				alert("soon");
+			}
+		</script>
+	</head>
+	<body>
+		<h1>Sales Invoice</h1>
+		<table id="billTable" border="1px" cellspacing="5px" cellpadding="5px" contenteditable="true">
+			<tbody>
+				<tr id="item0">
+					<th>EAN</th>
+					<th>Units</th>
+					<th>Item Description</th>
+					<th>Unit Price</th>
+					<th>Total</th>
+				</tr>
+				<tr id="item1">
+					<td><input type="text" name="pid" onchange="getInfo(0)"/></td>
+					<td><input type="text" name="units" onchange="calcTotal(0)"/></td>
+					<td><input type="text" name="description" readonly="readonly"/></td>
+					<td><input type="text" name="price" readonly="readonly"/></td>
+					<td><input type="text" name="total" readonly="readonly"/></td>
+				</tr>
+				<tr id="item2" style="display:None">
+					<td><input type="text" name="pid" onchange="getInfo(1)"/></td>
+					<td><input type="text" name="units" onchange="calcTotal(1)"/></td>
+					<td><input type="text" name="description" readonly="readonly"/></td>
+					<td><input type="text" name="price" readonly="readonly"/></td>	
+					<td><input type="text" name="total" readonly="readonly"/></td>
+				</tr>
+				<tr id="item3" style="display:None">
+					<td><input type="text" name="pid" onchange="getInfo(2)"/></td>
+					<td><input type="text" name="units" onchange="calcTotal(2)"/></td>
+					<td><input type="text" name="description" readonly="readonly"/></td>
+					<td><input type="text" name="price" readonly="readonly"/></td>
+					<td><input type="text" name="total" readonly="readonly"/></td>
+				</tr>
+				<tr id="item4" style="display:None">
+					<td><input type="text" name="pid" onchange="getInfo(3)"/></td>
+					<td><input type="text" name="units" onchange="calcTotal(3)"/></td>
+					<td><input type="text" name="description" readonly="readonly"/></td>
+					<td><input type="text" name="price" readonly="readonly"/></td>
+					<td><input type="text" name="total" readonly="readonly"/></td>
+				</tr>
+				<tr id="item5" style="display:None">
+					<td><input type="text" name="pid" onchange="getInfo(4)"/></td>
+					<td><input type="text" name="units" onchange="calcTotal(4)"/></td>
+					<td><input type="text" name="description" readonly="readonly"/></td>
+					<td><input type="text" name="price" readonly="readonly"/></td>
+					<td><input type="text" name="total" readonly="readonly"/></td>
+				</tr>
+			</tbody>
+		</table>
+		<br>
+		<div id=grandTotal>
+		<b>TOTAL: &nbsp;&nbsp;</b><input type="number" value=0 id=totalBox readonly="readonly"></input>
+		</div>
+		<input type="button" value="Generate Bill" id="billGen" onClick="genBill()"></input>
+		<div id="footer">
+				<br>
+				<p> &copy; 2018 Acme Grocers,Salarpuria Touchstone,Bangalore 560037</p>
+		</div>
+	</body>
+</html>
+
+<!-- 
+
+<th><input type="text" name="code" id="code" size="6" maxlength="6"/></th>
+<div id="billGen">
+			<input type="button" value="Generate Bill" onClick="genBill()"></input>
+		</div>
+-->

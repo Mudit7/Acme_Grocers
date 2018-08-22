@@ -1,0 +1,58 @@
+body
+{
+	color: #000000;
+	text-align: center;
+}
+#user{
+	background:transparent;
+	border:"0";
+	border-left:#ffffff;
+	border-right:#ffffff;
+	border-top:#ffffff;
+	border-bottom: 1px solid black;
+	font-style: italic;
+	color: rgb(135, 137, 141);
+}
+#pass{
+	background:transparent;
+	border:"0";
+	border-left:#ffffff;
+	border-right:#ffffff;
+	border-top:#ffffff;
+	border-bottom: 1px solid black;
+	font-style: italic;
+	color: rgb(135, 137, 141);
+}
+#title{
+	color:#0000ff;
+}
+#btn1{
+	background-color:#009ACD;
+	height: 30px;
+	width: 70px;
+	color:#ffffff; 
+	cursor:pointer;
+	font-size: 110%;
+}
+#loginBox{
+	position:relative;
+	margin:auto;
+	border-style: solid;
+    border-width: 2px;
+	border-color: #c7c1c1;
+	width:30%;
+	height: 65%;
+	font-size: 120%;
+	font-style: italic;
+	color: rgb(76, 78, 82);
+	top:10%;
+}
+#footer{
+	position:fixed;
+	background: linear-gradient(to bottom, #373B44 0%, #5286f4 100%);
+	color:#ffffff;
+	bottom: 0;
+	height: 12%;
+	width: 100%;
+	
+}
