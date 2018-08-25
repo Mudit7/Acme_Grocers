@@ -31,9 +31,24 @@
     position:fixed;
     height: 5%;
     width: 12%;
-    bottom: 100;
+    bottom: 20%;
     right:43%;
-    font-family: fantasy;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     cursor:pointer;
     font-size: 130%;
+}
+#resetEntries{
+    position: fixed;
+    background-color: black;
+    color:white;
+    cursor:pointer;
+    left:92%;
+    bottom: 13%;
+    height: 4%;
+    width: 8%;
+}
+.entrybox{
+    border-color: darkgray;
+    font-weight:bold; 
+    color: blue;
 }

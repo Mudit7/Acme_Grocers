@@ -18,7 +18,10 @@ function validate(username,password){
 	else if(check(UserEntries,username,password)==0)
 			document.getElementById("wrongPass").type="text";	
 	else
-			alert("Wrong Username");
+		{
+			document.getElementById("wrongPass").type="text";
+			document.getElementById("wrongPass").value="Wrong Username";
+		}
 }
 function check(UserEntries,username,password){
 	var user_f=0;
