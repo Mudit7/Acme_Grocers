@@ -106,9 +106,10 @@ function cash(){
 	{
 		win.document.write('<tbody><tr><td>'+description[i].value+'</td>'+'<td>'+units[i].value+'</td>'+'<td>'+price[i].value+'</td>'+'<td>'+total[i].value+'</td>');
 	}
-	win.document.write('<tr><td></td><td></td><td><hr>cgst(4%):</td><td><hr>'+parseInt(document.getElementById("totalBox").value)/25+'</td></tr>');
-	win.document.write('<tr> <td></td><td></td><td>sgst(4%):</td><td>'+parseInt(document.getElementById("totalBox").value)/25+'</td></tr>');
-	win.document.write('<tr><td></td><td></td><td><b>Gross:<b></td><td>'+'<b>'+parseInt(document.getElementById("totalBox").value)*108/100+'&nbsp INR'+'</td></tr>');
+	win.document.write('<tr><td></td><td></td><td><hr>Total:</td><td><hr>'+document.getElementById("totalBox").value+'</td></tr>');
+	win.document.write('<tr><td></td><td></td><td>CGST(4%):</td><td>'+parseInt(document.getElementById("totalBox").value)/25+'</td></tr>');
+	win.document.write('<tr> <td></td><td></td><td>SGST(4%):</td><td>'+parseInt(document.getElementById("totalBox").value)/25+'</td></tr>');
+	win.document.write('<tr><td></td><td></td><td><b>Gross Amt:<b></td><td>'+'<b>'+parseInt(document.getElementById("totalBox").value)*108/100+'&nbsp INR'+'</td></tr>');
 	win.document.write('</tbody></table>');
 	win.document.write('<br><br><br><p id="conclusion">Thank you, visit again</p><hr></div>');
 	win.document.write('<br><input type=button id="printButton" value="Print Bill" onclick="window.print()"+/>');
